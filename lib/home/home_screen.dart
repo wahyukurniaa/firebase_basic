@@ -2,7 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_basic/home/alertdialog/alertdialogtambah.dart';
 import 'package:firebase_basic/home/home_controller.dart';
 import 'package:firebase_basic/model/model.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -12,7 +11,6 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final HomeController homeController = Get.put(HomeController());
-    final userId = FirebaseAuth.instance.currentUser?.uid;
 
     final TextEditingController namaController = TextEditingController();
     final TextEditingController jurusanController = TextEditingController();

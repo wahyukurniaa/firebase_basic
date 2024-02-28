@@ -56,8 +56,6 @@ class HomeController extends GetxController {
         _mahasiswa.value =
             mahasiswaList.cast<Mahasiswa>(); // Cast to Mahasiswa type
       } else {
-        // Handle case when user is not authenticated
-        // You can show a message or redirect to login screen
         debugPrint('User is not authenticated');
       }
     } catch (e) {
