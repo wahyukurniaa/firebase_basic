@@ -43,7 +43,7 @@ class SignInScreen extends StatelessWidget {
                 String email = _emailController.text.trim();
                 String password = _passwordController.text.trim();
                 if (email.isNotEmpty && password.isNotEmpty) {
-                  var result = await _authController.signIn(email, password);
+                  bool result = await _authController.signIn(email, password);
                   if (result == true) {
                     Get.offNamed('/Home');
                   }
